@@ -11,7 +11,7 @@
 using namespace std;
 using namespace boost::interprocess;
 
-const int poly_degree = 512;
+const int poly_degree = 64;
 const int q = 724481;
 typedef vector<int> Poly;
 
@@ -64,7 +64,7 @@ Poly rand_error_poly(int q, int n) {
     double zeta = compute_max_zeta(q, n);
     int bound = static_cast<int>(floor(zeta));
     // Enforce a minimum error range for unpredictability
-    if (bound <= 1) {
+    if (bound <= 2) {
         cerr << "⚠️  zeta too small (" << bound << "). Error polynomial would be too predictable.\n";
         cerr << "❌  Consider increasing q or reducing n.\n";
         exit(1);

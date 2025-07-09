@@ -8,7 +8,7 @@
 using namespace std;
 using namespace boost::interprocess;
 
-const int poly_degree = 512;
+const int poly_degree = 64;
 const int q = 724481;
 typedef vector<int> Poly;
 

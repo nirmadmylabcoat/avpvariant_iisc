@@ -57,7 +57,7 @@ def test_m_parties(m):
     return True
 
 def main():
-    for m in range(90, MAX_M + 1):
+    for m in range(80, MAX_M + 1):
         if not test_m_parties(m):
             break
     else:

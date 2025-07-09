@@ -8,7 +8,7 @@
 using namespace std;
 using namespace boost::interprocess;
 
-const int poly_degree = 512; //Degree of the polynomial
+const int poly_degree = 64; //Degree of the polynomial
 const int q = 724481; //large prime modulus used for coefficient arithmetic. Must satisfy cryptographic constraints
 typedef vector<int> Poly; //Defines a Poly as a vector of integers
 
